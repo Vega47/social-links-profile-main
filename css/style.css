@@ -1,1 +1,71 @@
-sadsad
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: var(--grey900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  background-color: var(--grey800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.card .img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+.card .img img {
+  border-radius: 50%;
+  width: 100%;
+}
+.card .content {
+  text-align: center;
+}
+.card .content h3 {
+  color: var(--white);
+  padding: 10px;
+  font-weight: 900;
+}
+.card .content h4 {
+  color: var(--green);
+}
+.card .content p {
+  color: #f7f7f3;
+  padding: 20px;
+}
+.card .btns {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.card .btns button {
+  background-color: var(--grey700);
+  border: none;
+  margin-bottom: 15px;
+  padding: 15px 10px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.card .btns button:hover {
+  background-color: var(--green);
+  transition: 0.5s;
+}
